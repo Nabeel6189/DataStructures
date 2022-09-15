@@ -1,4 +1,4 @@
-const a = [70,83,42,55,55,64,89];
+const a = [10, 22, 45, 32, 43, 54];
 let first_delta = Math.abs(a[0] - a[1]);
 
 let total_delta = 0;
@@ -10,7 +10,7 @@ for(let i=0; i<a.length-1; i++){
     total_delta += delta;
 };
 
-let average_delta = total_delta/a.length;
+let average_delta = total_delta/(a.length-1);
 
 console.log('total delta is :', total_delta);
 
@@ -25,7 +25,7 @@ for(let i=1; i<a.length; i++){
     total_delta1 += delta;
 };
 
-let average_delta1 = total_delta/a.length;
+let average_delta1 = total_delta/(a.length-1);
 
 console.log('total delta is :', total_delta1);
 
