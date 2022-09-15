@@ -10,17 +10,25 @@ for (let i = 0; i<a.length; i++){
 return false
 }
 
-console.log(searchElement([23, 45, 76, 45, 67, 78]));
-console.log(searchElement([23, 45, 76, 46, 67, 78], 23));
-console.log(searchElement([23, 45, 76, 46, 67, 78], 45));
+// console.log(searchElement([23, 45, 76, 45, 67, 78]));
+// console.log(searchElement([23, 45, 76, 46, 67, 78], 23));
+// console.log(searchElement([23, 45, 76, 46, 67, 78], 45));
 
 //Check if the array is sorted in ascending
 function isSorted(a) {
 
     for (let i = 1; i<a.length; i++){
-        if(a[i] > a[i-1]) {
-            console.log(a[i]);
-            return false        
+        let v1 = a[i];
+        let v2 = a[i-1];
+        if(v1 < v2) {
+            console.log(v1);
+            console.log('The elements are not in ascending');
+             return false    
+        }
+        else if (v1 > v2){
+            console.log(v1);
+            console.log('The elements are not in descending')
+            return false
         }
     
     }
