@@ -1,3 +1,22 @@
+//Ternary operator in javascript
+let username=true;
+username ? username ='nabeel' : username ='santhosh';
+console.log(username);
+
+//coercion
+//The below list of values are falsy values
+// undefined
+// null
+// 0
+// ''
+// NaN
+
+let names = 'rajesh';
+   names ? console.log('Condition is true') : console.log('Condition is false');
+
+let num = '';
+   2 === num ? console.log('Condition is true') : console.log('Condition is false');
+
 
 //Switch case
 let newUser = 'testprep';
