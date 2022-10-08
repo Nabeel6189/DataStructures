@@ -34,5 +34,5 @@ function username1 (){
     }
 }
 
-//Here the console log does not take the value from the function
+//Here the console log does not take the value from the function and errors out
 console.log(names1);
